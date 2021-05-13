@@ -65,6 +65,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 }
             }
         });
-        thread.start();
+       
     }
 }
