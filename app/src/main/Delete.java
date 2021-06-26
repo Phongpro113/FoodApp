@@ -37,7 +37,7 @@ public class ProductActivity extends Activity {
         txtUnit.setText(product.getUnit()); 
         String s = (new DecimalFormat("#,###.##")).format(product.getPrice()); 
         txtPrice.setText(s); 
-        //thiết đặt sự kiện khi click vào các button 
+       
         Button btnOK = (Button)findViewById(R.id.btnOK); 
         Button btnCancel = (Button)findViewById(R.id.btnCancel); 
         btnOK.setOnClickListener(new OKClickListener()); 
@@ -48,7 +48,7 @@ public class ProductActivity extends Activity {
     { 
         @Override 
         public void onClick(View v) { 
-            //lấy dữ liệu từ layout để cập nhật lại các sản phẩm trong mảng 
+           
             product.setProductName(txtProductName.getText().toString()); 
             product.setUnit(txtUnit.getText().toString()); 
             String s = txtPrice.getText().toString(); 
